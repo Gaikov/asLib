@@ -11,9 +11,9 @@ import flash.geom.Point;
 
 import flash.geom.Point;
 
-import net.maygem.lib.utils.UMath;
+import com.grom.lib.utils.UMath;
 
-import net.maygem.lib.utils.UPoint;
+import com.grom.lib.utils.UPoint;
 
 public class VelByPosInit implements IParticleModifier
 {

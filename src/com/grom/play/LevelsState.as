@@ -7,8 +7,8 @@
  */
 package com.grom.play
 {
-import net.maygem.lib.settings.UserSettingsManager;
-import net.maygem.lib.settings.UserVar;
+import com.grom.lib.settings.UserSettingsManager;
+import com.grom.lib.settings.UserVar;
 
 public class LevelsState
 {

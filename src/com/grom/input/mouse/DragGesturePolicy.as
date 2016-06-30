@@ -9,7 +9,7 @@ import flash.display.DisplayObject;
 import flash.events.MouseEvent;
 import flash.geom.Point;
 
-import net.maygem.lib.debug.Log;
+import com.grom.lib.debug.Log;
 
 public class DragGesturePolicy
 {

@@ -11,10 +11,10 @@ import flash.display.Stage;
 import flash.events.Event;
 import flash.geom.Point;
 
-import net.maygem.lib.ui.layout.alignment.Alignments;
-import net.maygem.lib.ui.layout.alignment.IAlignment;
-import net.maygem.lib.utils.UArray;
-import net.maygem.lib.utils.UDisplay;
+import com.grom.lib.ui.layout.alignment.Alignments;
+import com.grom.lib.ui.layout.alignment.IAlignment;
+import com.grom.lib.utils.UArray;
+import com.grom.lib.utils.UDisplay;
 
 public class DisplayHorizontalPopupPolicy implements IDisplayPopupPolicy, IClosePopupPolicy
 {
@@ -80,7 +80,7 @@ import com.ns.menu.events.PopupEvent;
 import flash.display.Sprite;
 import flash.geom.Point;
 
-import net.maygem.lib.utils.UPoint;
+import com.grom.lib.utils.UPoint;
 
 class FadeInPopup
 {

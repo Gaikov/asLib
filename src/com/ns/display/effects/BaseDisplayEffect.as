@@ -7,8 +7,8 @@ package com.ns.display.effects
 {
 import flash.display.DisplayObject;
 
-import net.maygem.lib.scene.frameListener.FramePolicy;
-import net.maygem.lib.scene.frameListener.IFrameListener;
+import com.grom.lib.scene.frameListener.FramePolicy;
+import com.grom.lib.scene.frameListener.IFrameListener;
 
 public class BaseDisplayEffect implements IFrameListener
 {

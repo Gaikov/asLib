@@ -9,9 +9,9 @@ import com.grom.display.particles.modifiers.IParticleModifier;
 
 import flash.display.Sprite;
 
-import net.maygem.lib.scene.frameListener.FramePolicy;
-import net.maygem.lib.scene.frameListener.IFrameListener;
-import net.maygem.lib.utils.UContainer;
+import com.grom.lib.scene.frameListener.FramePolicy;
+import com.grom.lib.scene.frameListener.IFrameListener;
+import com.grom.lib.utils.UContainer;
 
 public class ParticlesNode extends Sprite implements IFrameListener
 {

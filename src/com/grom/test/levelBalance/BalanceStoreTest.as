@@ -7,7 +7,7 @@ package com.grom.test.levelBalance
 {
 import flash.display.Sprite;
 
-import net.maygem.lib.debug.Log;
+import com.grom.lib.debug.Log;
 
 public class BalanceStoreTest extends Sprite
 {

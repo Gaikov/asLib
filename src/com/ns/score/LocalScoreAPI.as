@@ -5,7 +5,7 @@
  */
 package com.ns.score
 {
-import net.maygem.lib.settings.UserVar;
+import com.grom.lib.settings.UserVar;
 
 public class LocalScoreAPI implements IScoreAPI
 {

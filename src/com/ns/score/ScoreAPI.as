@@ -13,7 +13,7 @@ import flash.net.URLLoader;
 import flash.net.URLRequestMethod;
 import flash.net.URLVariables;
 
-import net.maygem.lib.debug.Log;
+import com.grom.lib.debug.Log;
 
 public class ScoreAPI implements IScoreAPI
 {

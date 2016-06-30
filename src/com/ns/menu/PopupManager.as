@@ -96,7 +96,7 @@ import com.ns.menu.displayPolicy.IPopupRemover;
 import flash.display.Sprite;
 import flash.events.Event;
 
-import net.maygem.lib.graphics.bitmap.MoviesCache;
+import com.grom.lib.graphics.bitmap.MoviesCache;
 
 class MenuPopup extends Sprite implements IPopupRemover
 {

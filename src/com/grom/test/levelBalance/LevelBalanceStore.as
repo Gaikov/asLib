@@ -14,7 +14,7 @@ import flash.net.URLRequest;
 import flash.net.URLVariables;
 import flash.net.sendToURL;
 
-import net.maygem.lib.debug.Log;
+import com.grom.lib.debug.Log;
 
 public class LevelBalanceStore
 {

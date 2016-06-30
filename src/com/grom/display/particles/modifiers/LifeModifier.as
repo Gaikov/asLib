@@ -7,7 +7,7 @@ package com.grom.display.particles.modifiers
 {
 import com.grom.display.particles.Particle;
 
-import net.maygem.lib.utils.UMath;
+import com.grom.lib.utils.UMath;
 
 public class LifeModifier implements IParticleModifier
 {

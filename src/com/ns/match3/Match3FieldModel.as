@@ -5,7 +5,7 @@
  */
 package com.ns.match3
 {
-import net.maygem.lib.collections.Array2D;
+import com.grom.lib.collections.Array2D;
 
 public class Match3FieldModel
 {

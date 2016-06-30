@@ -8,7 +8,7 @@ package com.grom.tilemap
 import flash.display.DisplayObject;
 import flash.display.Sprite;
 
-import net.maygem.lib.graphics.bitmap.CachedFrame;
+import com.grom.lib.graphics.bitmap.CachedFrame;
 
 public class TilesLayerView extends Sprite
 {

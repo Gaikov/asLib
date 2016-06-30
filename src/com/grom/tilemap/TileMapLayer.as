@@ -9,7 +9,7 @@ import flash.display.DisplayObject;
 import flash.display.MovieClip;
 import flash.display.Sprite;
 
-import net.maygem.lib.graphics.bitmap.MoviesCache;
+import com.grom.lib.graphics.bitmap.MoviesCache;
 
 public class TileMapLayer
 {
