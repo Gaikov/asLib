@@ -49,6 +49,15 @@ public class CachedFrame
 		return sprite;
 	}
 
+	public function trim():CachedFrame
+	{
+		var frame:CachedFrame = UBitmap.trim(_bitmapData);
+		_offset = _offset.add(frame._offset);
+		_bitmapData.dispose();
+		_bitmapData = frame._bitmapData;
+		return this;
+	}
+
 	static public function renderObject(obj:DisplayObject, border:int = 0):CachedFrame
 	{
 		obj.rotation = 0;

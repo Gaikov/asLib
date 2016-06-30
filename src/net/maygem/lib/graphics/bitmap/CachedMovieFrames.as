@@ -42,7 +42,7 @@ public class CachedMovieFrames
 		return frame.createFrame();
 	}
 
-	static public function renderMovie(movie:MovieClip):CachedMovieFrames
+	static public function renderMovie(movie:MovieClip, trim:Boolean = false):CachedMovieFrames
 	{
 		UContainer.removeChildrenWithPrefix(movie, "anchor");
 
@@ -51,7 +51,13 @@ public class CachedMovieFrames
 		for (var i:int = 1; i <= movie.totalFrames; i++)
 		{
 			movie.gotoAndStop(i);
-			frames.addFrame(CachedFrame.renderObject(movie));
+
+			var frame:CachedFrame = CachedFrame.renderObject(movie);
+			if (trim)
+			{
+				frame.trim();
+			}
+			frames.addFrame(frame);
 		}
 		return frames;
 	}
