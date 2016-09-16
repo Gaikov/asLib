@@ -5,8 +5,6 @@
  */
 package com.grom.test.levelBalance
 {
-import com.adobe.serialization.json.JSON;
-
 import flash.events.Event;
 import flash.events.IOErrorEvent;
 import flash.net.URLLoader;
@@ -33,7 +31,7 @@ public class LevelBalanceStore
 		var params:URLVariables = new URLVariables();
 		params.game_id = _gameID;
 		params.level_id = levelID;
-		params.data = JSON.encode(data);
+		params.data = JSON.stringify(data);
 		params.hash = Math.random();
 		q.data = params;
 
@@ -78,7 +76,7 @@ public class LevelBalanceStore
 			}
 			else
 			{
-				onCompleted(JSON.decode(String(loader.data)));
+				onCompleted(JSON.parse(String(loader.data)));
 			}
 		});
 
