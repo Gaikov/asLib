@@ -5,8 +5,8 @@
   </component>
   <component name="FlexBuildConfigurationManager" active="asLib">
     <configurations>
-      <configuration name="asLib" pure-as="true" output-type="Library" output-file="asLib.swc" output-folder="$MODULE_DIR$/../out/production/asLib">
-        <dependencies target-player="21.0">
+      <configuration name="asLib" target-platform="Desktop" pure-as="true" output-type="Library" output-file="asLib.swc" output-folder="$MODULE_DIR$/../out/production/asLib">
+        <dependencies>
           <entries>
             <entry library-name="MainLibDependency" library-level="project">
               <dependency linkage="Merged" />
