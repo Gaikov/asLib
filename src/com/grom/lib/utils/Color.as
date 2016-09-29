@@ -25,9 +25,9 @@ public class Color
 
 	public function setFromByte(r:uint, g:uint, b:uint):void
 	{
-		r = UMath.clamp(r / 0xff, 0, 1);
-		g = UMath.clamp(g / 0xff, 0, 1);
-		b = UMath.clamp(b / 0xff, 0, 1);
+		this.r = UMath.clamp(r / 0xff, 0, 1);
+		this.g = UMath.clamp(g / 0xff, 0, 1);
+		this.b = UMath.clamp(b / 0xff, 0, 1);
 	}
 
 	public function blend(other:Color, alpha:Number):void

@@ -1,10 +1,13 @@
 package com.grom.lib.graphics.bitmap
 {
-	import flash.display.BitmapData;
-	import flash.geom.Point;
-	import flash.geom.Rectangle;
+import com.grom.lib.utils.Color;
 
-	public class UBitmap
+import flash.display.BitmapData;
+import flash.geom.ColorTransform;
+import flash.geom.Point;
+import flash.geom.Rectangle;
+
+public class UBitmap
 	{
 		static public function createSquare(src:BitmapData):BitmapData
 		{
@@ -103,6 +106,13 @@ package com.grom.lib.graphics.bitmap
 			return 0;
 		}
 
-
+		static public function tint(src:BitmapData, color:uint):BitmapData
+		{
+			var res:BitmapData = new BitmapData(src.width, src.height, true, 0);
+			var c:Color = new Color();
+			c.setFromUINT(color);
+			res.draw(src, null, new ColorTransform(c.r, c.g, c.b));
+			return res;
+		}
 	}
 }
