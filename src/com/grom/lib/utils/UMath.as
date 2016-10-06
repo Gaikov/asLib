@@ -164,5 +164,13 @@ public class UMath
 		}
 		return angle;
 	}
+
+	public static function closestPOT(size:int):int
+	{
+		var power:int = 1;
+		while(power < size)
+			power*=2;
+		return power;
+	}
 }
 }
