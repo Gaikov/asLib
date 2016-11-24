@@ -98,17 +98,18 @@ public class UDisplay
 		return new Point(x - bounds.x, y - bounds.y);
 	}
 
-	static public function traceChildren(obj:DisplayObject, tabs:String = ""):void
+	static public function traceChildren(obj:DisplayObject, processChild:Function):void
 	{
-		var offsX:Number = obj.x + obj.width;
-		var offsY:Number = obj.y + obj.height;
+		if (!processChild(obj))
+		{
+			return;
+		}
 
-		Log.info(tabs + "name: " + obj.name + ", bottom offset: " + offsX + "," + offsY, 0xaaaaaa);
 		if (obj is DisplayObjectContainer)
 		{
 			var c:DisplayObjectContainer = DisplayObjectContainer(obj);
 			for (var i:int = 0; i < c.numChildren; i++)
-				traceChildren(c.getChildAt(i), tabs + "\t");
+				traceChildren(c.getChildAt(i), processChild);
 		}
 	}
 
