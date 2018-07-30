@@ -8,11 +8,11 @@
       <configuration name="asLib" target-platform="Desktop" pure-as="true" output-type="Library" output-file="asLib.swc" output-folder="$MODULE_DIR$/../out/production/asLib">
         <dependencies>
           <entries>
-            <entry library-name="MainLibDependency" library-level="project">
+            <entry library-name="libs" library-level="project">
               <dependency linkage="Merged" />
             </entry>
           </entries>
-          <sdk name="ApacheFlex4.15" />
+          <sdk name="apache-flex-sdk-4.16.1_air_30" />
         </dependencies>
         <compiler-options>
           <map>
@@ -37,9 +37,10 @@
       <excludeFolder url="file://$MODULE_DIR$/src/net/maygem/lib/scene/manipulator/fx" />
       <excludeFolder url="file://$MODULE_DIR$/src/net/maygem/lib/ui/popup" />
     </content>
-    <orderEntry type="jdk" jdkName="ApacheFlex4.15" jdkType="Flex SDK Type (new)" />
+    <orderEntry type="jdk" jdkName="apache-flex-sdk-4.16.1_air_30" jdkType="Flex SDK Type (new)" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="libDep" level="project" />
     <orderEntry type="library" exported="" name="MainLibDependency" level="project" />
+    <orderEntry type="library" exported="" name="libs" level="project" />
   </component>
 </module>
