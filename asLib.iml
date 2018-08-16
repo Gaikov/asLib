@@ -2,8 +2,13 @@
 <module type="Flex" version="4">
   <component name="FlexBuildConfigurationManager" active="asLib">
     <configurations>
-      <configuration name="asLib" pure-as="true" output-type="Library" output-file="asLib.swc" output-folder="$MODULE_DIR$/build" skip-build="true">
-        <dependencies target-player="11.1">
+      <configuration name="asLib" target-platform="Desktop" pure-as="true" output-type="Library" output-file="asLib.swc" output-folder="$MODULE_DIR$/build">
+        <dependencies>
+          <entries>
+            <entry library-name="libs" library-level="project">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
           <sdk name="flex_sdk_4.6" />
         </dependencies>
         <compiler-options />
@@ -22,5 +27,6 @@
     <orderEntry type="jdk" jdkName="flex_sdk_4.6" jdkType="Flex SDK Type (new)" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="tweener" level="project" />
+    <orderEntry type="library" exported="" name="libs" level="project" />
   </component>
 </module>
