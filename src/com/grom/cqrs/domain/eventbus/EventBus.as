@@ -1,10 +1,8 @@
 package com.grom.cqrs.domain.eventbus
 {
-import flash.utils.Dictionary;
-import flash.utils.getDefinitionByName;
-import flash.utils.getQualifiedClassName;
-
 import com.grom.cqrs.domain.event.BaseEvent;
+
+import flash.utils.Dictionary;
 
 public class EventBus implements IEventBus
 {
@@ -27,7 +25,7 @@ public class EventBus implements IEventBus
         var listeners:Array = listenersMap[eventClass];
         if (listeners == null)
         {
-            listeners = new Array();
+            listeners = [];
             listenersMap[eventClass] = listeners;
         }
 
