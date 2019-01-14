@@ -31,7 +31,6 @@ public class Log
 	static public function print(text:String, color:uint = 0xffffff):void
 	{
 		_con.trace(text, color);
-		trace(text);
 		for each (var a:ILogAdapter in _adapters)
 		{
 			a.print(text, color);
