@@ -1,24 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="Flex" version="4">
-  <component name="Flex.Build.Configuration">
-    <option name="VERSION" value="3" />
-  </component>
   <component name="FlexBuildConfigurationManager" active="asLib">
     <configurations>
-      <configuration name="asLib" target-platform="Desktop" pure-as="true" output-type="Library" output-file="asLib.swc" output-folder="$MODULE_DIR$/../out/production/asLib">
+      <configuration name="asLib" target-platform="Desktop" pure-as="true" output-type="Library" output-file="asLib.swc" output-folder="$MODULE_DIR$/../build">
         <dependencies>
           <entries>
-            <entry library-name="comLibs" library-level="project">
+            <entry library-id="9e3ced5f-bb78-453c-94df-f44876c6312a">
               <dependency linkage="Merged" />
             </entry>
           </entries>
-          <sdk name="flex_sdk_4.16.1_air_25.0_embeddedFonts" />
+          <sdk name="flex-sdk" />
         </dependencies>
-        <compiler-options>
-          <map>
-            <entry key="compiler.keep-generated-actionscript" value="false" />
-          </map>
-        </compiler-options>
+        <compiler-options />
         <packaging-air-desktop />
         <packaging-android />
         <packaging-ios />
@@ -31,11 +24,18 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="flex_sdk_4.16.1_air_25.0_embeddedFonts" jdkType="Flex SDK Type (new)" />
+    <orderEntry type="jdk" jdkName="flex-sdk" jdkType="Flex SDK Type (new)" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="libDep" level="project" />
-    <orderEntry type="library" exported="" name="MainLibDependency" level="project" />
-    <orderEntry type="library" exported="" name="libs" level="project" />
-    <orderEntry type="library" exported="" name="comLibs" level="project" />
+    <orderEntry type="library" exported="" name="tweener" level="project" />
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="9e3ced5f-bb78-453c-94df-f44876c6312a" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/tweener.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
